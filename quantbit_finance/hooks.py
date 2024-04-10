@@ -1,7 +1,7 @@
 app_name = "quantbit_finance"
 app_title = "Quantbit Finance"
-app_publisher = "quantbit technologies pvt.ltd"
-app_description = "for digital chequebook"
+app_publisher = "quantbit technologies pvt ltd"
+app_description = "digital chequebook"
 app_email = "contact@erpdata.in"
 app_license = "MIT"
 

@@ -1,6 +1,6 @@
 ## Quantbit Finance
 
-for digital chequebook
+digital chequebook
 
 #### License
 

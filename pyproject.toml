@@ -1,9 +1,9 @@
 [project]
 name = "quantbit_finance"
 authors = [
-    { name = "quantbit technologies pvt.ltd", email = "contact@erpdata.in"}
+    { name = "quantbit technologies pvt ltd", email = "contact@erpdata.in"}
 ]
-description = "for digital chequebook"
+description = "digital chequebook"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
