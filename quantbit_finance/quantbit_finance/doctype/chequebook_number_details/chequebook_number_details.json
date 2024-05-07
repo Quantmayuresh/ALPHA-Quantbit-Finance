@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{cheque_number}-{account_no}",
+ "creation": "2024-04-25 10:27:01.350681",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parent_details_section",
+  "parent_type",
+  "parent_document",
+  "details_section",
+  "cheque_number",
+  "column_break_fdvoz",
+  "cheque_series_reference",
+  "column_break_d5zhv",
+  "account_no",
+  "column_break_6luag",
+  "payment_reference",
+  "column_break_ocgcl",
+  "payment_status",
+  "active_status"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "cheque_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Cheque Number"
+  },
+  {
+   "fieldname": "column_break_d5zhv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ocgcl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 3,
+   "default": "0",
+   "fieldname": "payment_status",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Payment Status"
+  },
+  {
+   "fieldname": "column_break_fdvoz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cheque_series_reference",
+   "fieldtype": "Data",
+   "label": "Cheque series Reference"
+  },
+  {
+   "columns": 3,
+   "fieldname": "payment_reference",
+   "fieldtype": "Link",
+   "label": "Payment Reference",
+   "options": "Payment Entry"
+  },
+  {
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "label": "Account No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6luag",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "parent_details_section",
+   "fieldtype": "Section Break",
+   "label": "Parent Details"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "parent_type",
+   "fieldtype": "Data",
+   "label": "Parent Type"
+  },
+  {
+   "fieldname": "parent_document",
+   "fieldtype": "Data",
+   "label": "Parent Document"
+  },
+  {
+   "default": "0",
+   "fieldname": "active_status",
+   "fieldtype": "Check",
+   "label": "Active Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-04 19:01:01.125428",
+ "modified_by": "Administrator",
+ "module": "Quantbit Finance",
+ "name": "Chequebook Number details",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

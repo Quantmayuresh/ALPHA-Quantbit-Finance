@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-10 21:22:19.498524",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cheque_no_from",
+  "column_break_2qenb",
+  "cheque_no_to",
+  "column_break_sliuw",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "cheque_no_from",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Cheque No From",
+   "length": 5,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "cheque_no_to",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Cheque No To",
+   "length": 5,
+   "set_only_once": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Active"
+  },
+  {
+   "fieldname": "column_break_2qenb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sliuw",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-26 16:43:16.711654",
+ "modified_by": "Administrator",
+ "module": "Quantbit Finance",
+ "name": "Digital ChequeBook Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company_account",
+ "creation": "2024-04-10 21:10:52.500423",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "enable",
+  "column_break_ixgg6",
+  "date",
+  "section_break_i8sq6",
+  "bank_account",
+  "bank",
+  "column_break_5fnik",
+  "company_account",
+  "bank_account_no",
+  "section_break_ablz5",
+  "chequebook"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable "
+  },
+  {
+   "fieldname": "column_break_ixgg6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_i8sq6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bank Account",
+   "options": "Bank Account",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "bank_account.bank",
+   "fieldname": "bank",
+   "fieldtype": "Data",
+   "label": "Bank "
+  },
+  {
+   "fieldname": "column_break_5fnik",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "bank_account.account",
+   "fieldname": "company_account",
+   "fieldtype": "Data",
+   "label": "Company Account",
+   "unique": 1
+  },
+  {
+   "fetch_from": "bank_account.bank_account_no",
+   "fieldname": "bank_account_no",
+   "fieldtype": "Data",
+   "label": "Bank Account No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ablz5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "chequebook",
+   "fieldtype": "Table",
+   "label": "Digital ChequeBook Details",
+   "options": "Digital ChequeBook Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-04 17:36:02.613220",
+ "modified_by": "Administrator",
+ "module": "Quantbit Finance",
+ "name": "Digital ChequeBook",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
